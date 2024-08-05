@@ -1,11 +1,22 @@
-body, h1, h2, h3, h4, h5, h6 {font-family: "Lato", sans-serif}
-.w3-bar, h1, button {font-family: "Montserrat", sans-serif}
-.fa-anchor, .fa-coffee {font-size: 200px}
-.bghov, .hov:hover {color: #fff!important; background-color: rgb(219, 188, 223)!important}
-.memo:hover {font-size: 8em;}
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Lato", sans-serif;
+}
+.w3-bar, h1, button {
+    font-family: "Montserrat", sans-serif;
+}
+.fa-anchor, .fa-coffee {
+    font-size: 200px;
+}
+.bghov, .hov:hover {
+    color: #fff!important;
+    background-color: rgb(219, 188, 223)!important;
+}
+.memo:hover {
+    font-size: 8em;
+}
 .emoji {
     display: inline-block;
-    font-size: 8em;
+    font-size: 5em;
     transition: transform 0.5s;
 }
 .zoom-in {
@@ -49,8 +60,13 @@ body, h1, h2, h3, h4, h5, h6 {font-family: "Lato", sans-serif}
     padding-right: 30px; 
 }
 
+/* Prevent horizontal overflow */
+body {
+    overflow-x: hidden;
+}
+
 /* Responsive Styles */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .w3-container {
         padding: 32px 16px;
     }
@@ -82,4 +98,3 @@ body, h1, h2, h3, h4, h5, h6 {font-family: "Lato", sans-serif}
     max-width: 100%;
     overflow-x: hidden;
 }
-
