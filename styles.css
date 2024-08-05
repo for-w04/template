@@ -1,7 +1,7 @@
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
-.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
-.fa-anchor,.fa-coffee {font-size:200px}
-.bghov,.hov:hover {color: #fff!important; background-color: rgb(219, 188, 223)!important}
+body, h1, h2, h3, h4, h5, h6 {font-family: "Lato", sans-serif}
+.w3-bar, h1, button {font-family: "Montserrat", sans-serif}
+.fa-anchor, .fa-coffee {font-size: 200px}
+.bghov, .hov:hover {color: #fff!important; background-color: rgb(219, 188, 223)!important}
 .memo:hover {font-size: 8em;}
 .emoji {
     display: inline-block;
@@ -15,8 +15,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     transform: scale(1);
 }
 .rec {
-    width: 20em; /* Set the width to 5em */
-    height: 30em; /* Set the height to 4em */
+    width: 20em; /* Set the width to 20em */
+    height: 30em; /* Set the height to 30em */
     object-fit: cover; /* Ensure the image covers the rectangle area */
     border: 2px solid #ccc; /* Optional: Adds a border around the image */
     border-radius: 8px; /* Optional: Rounds the corners of the border */
@@ -45,7 +45,36 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .pad {
     padding-left: 30px; 
 }
-
 .padr {
     padding-right: 30px; 
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .w3-container {
+        padding: 32px 16px;
+    }
+    .w3-jumbo {
+        font-size: 2.5em;
+    }
+    .w3-xxxlarge {
+        font-size: 2em;
+    }
+    .w3-twothird, .w3-third {
+        width: 100%;
+        display: block;
+        margin: 0;
+    }
+    .rec {
+        width: 100%;
+        height: auto;
+    }
+    .padr, .pad {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .sheri {
+        font-size: 1.2em;
+        padding-left: 15px;
+    }
 }
